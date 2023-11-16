@@ -14,11 +14,12 @@ import dataProvider from "@refinedev/simple-rest";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import routerBindings, { NavigateToResource, CatchAllNavigate, UnsavedChangesNotifier, DocumentTitleHandler } from "@refinedev/react-router-v6";
 import axios, { AxiosRequestConfig } from "axios";
-import { Layout } from "./components/layout";
-import "./App.css";
+import "./main.css";
 import { Login } from "./pages/login";
 import { CredentialResponse } from "./interfaces/google";
 import { parseJwt } from "./utils/parse-jwt";
+import { Booking, Home, Specialities, Blogs, Contact } from './pages';
+import { Book, Footer } from './components';
 
 const axiosInstance = axios.create();
 axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
@@ -37,95 +38,91 @@ return request;
 
 
 function App() {
-    
+    const authProvider: AuthBindings = {
+        login: async ({ credential }: CredentialResponse) => {
+            const profileObj = credential ? parseJwt(credential) : null;
 
-    
-            const authProvider: AuthBindings = {
-                login: async ({ credential }: CredentialResponse) => {
-                    const profileObj = credential ? parseJwt(credential) : null;
+            if (profileObj) {
+                localStorage.setItem(
+                    "user",
+                    JSON.stringify({
+                        ...profileObj,
+                        avatar: profileObj.picture,
+                    }),
+                );
+                
+    localStorage.setItem("token", `${ credential }`);
 
-                    if (profileObj) {
-                        localStorage.setItem(
-                            "user",
-                            JSON.stringify({
-                                ...profileObj,
-                                avatar: profileObj.picture,
-                            }),
-                        );
-                        
-localStorage.setItem("token", `${ credential }`);
+                return {
+                    success: true,
+                    redirectTo: "/",
+                };
+            }
 
-                        return {
-                            success: true,
-                            redirectTo: "/",
-                        };
-                    }
-
-                    return {
-                        success: false,
-                    };
-                },
-                logout: async () => {
-                    const token = localStorage.getItem("token");
-
-                    if (token && typeof window !== "undefined") {
-                        localStorage.removeItem("token");
-                        localStorage.removeItem("user");
-                        axios.defaults.headers.common = {};
-                        window.google?.accounts.id.revoke(token, () => {
-                            return {};
-                        });
-                    }
-
-                    return {
-                        success: true,
-                        redirectTo: "/login",
-                    };
-                },
-                onError: async (error) => {
-                    console.error(error);
-                    return { error };
-                },
-                check: async () => {
-                    const token = localStorage.getItem("token");
-
-                    if (token) {
-                        return {
-                            authenticated: true,
-                        };
-                    }
-
-                    return {
-                        authenticated: false,
-                        error: {
-                            message: "Check failed",
-                            name: "Token not found",
-                        },
-                        logout: true,
-                        redirectTo: "/login",
-                    };
-                },
-                getPermissions: async () => null,
-                getIdentity: async () => {
-                    const user = localStorage.getItem("user");
-                    if (user) {
-                        return JSON.parse(user);
-                    }
-
-                    return null;
-                },
+            return {
+                success: false,
             };
-            
+        },
+        logout: async () => {
+            const token = localStorage.getItem("token");
+
+            if (token && typeof window !== "undefined") {
+                localStorage.removeItem("token");
+                localStorage.removeItem("user");
+                axios.defaults.headers.common = {};
+                window.google?.accounts.id.revoke(token, () => {
+                    return {};
+                });
+            }
+
+            return {
+                success: true,
+                redirectTo: "/login",
+            };
+        },
+        onError: async (error) => {
+            console.error(error);
+            return { error };
+        },
+        check: async () => {
+            const token = localStorage.getItem("token");
+
+            if (token) {
+                return {
+                    authenticated: true,
+                };
+            }
+
+            return {
+                authenticated: false,
+                error: {
+                    message: "Check failed",
+                    name: "Token not found",
+                },
+                logout: true,
+                redirectTo: "/login",
+            };
+        },
+        getPermissions: async () => null,
+        getIdentity: async () => {
+            const user = localStorage.getItem("user");
+            if (user) {
+                return JSON.parse(user);
+            }
+
+            return null;
+        },
+    };
+    
     
     return (
         <BrowserRouter>
-        <GitHubBanner />
         <RefineKbarProvider>
             
             <DevtoolsProvider>
                 <Refine dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
-routerProvider={routerBindings}
-authProvider={authProvider} 
+                    routerProvider={routerBindings}
+                    authProvider={authProvider} 
                     options={{
                         syncWithLocation: true,
                         warnWhenUnsavedChanges: true,
@@ -134,16 +131,19 @@ authProvider={authProvider}
                         
                     }}
                 >
-
-
-                        <Routes>
-                            <Route index element={<WelcomePage />} />
-                        </Routes>
-                    <RefineKbar />
-                    <UnsavedChangesNotifier />
-                    <DocumentTitleHandler />
+                    <Routes>
+                        <Route path="/home" element={<Home />} />
+                        <Route path="/specialities" element={<Specialities />} />
+                        <Route path="/booking" element={<Booking />} />
+                        <Route path="/blogs" element={<Blogs />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                    <Book/>
+                    <Footer/>
+                <RefineKbar />
+                <UnsavedChangesNotifier />
+                <DocumentTitleHandler />
                 </Refine>
-            <DevtoolsPanel />
             </DevtoolsProvider>
             
         </RefineKbarProvider>
