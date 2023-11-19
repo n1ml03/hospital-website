@@ -1,3 +1,5 @@
+import { ImArrowLeft2, ImArrowRight2 } from "react-icons/im"
+
 export const Testimonials = () => {
     return (
         <>
@@ -42,7 +44,7 @@ export const Testimonials = () => {
                                                             <div className="mg-right-16px mg-right-0px---mbp">
                                                                 <div className="avatar-circle _04">
                                                                     <img
-                                                                        src="images/john-carter-testimonial-avatar-image.jpg"
+                                                                        src="src/assets/images/john-carter-testimonial-avatar-image.jpg"
                                                                         alt="John Carter Testimonial Avatar Image"
                                                                         className="avatar-image"
                                                                     />
@@ -117,8 +119,8 @@ export const Testimonials = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="btn-circle-secondary btn-testimonial left w-slider-arrow-left"><div className="line-rounded-icon">�&nbsp;�</div></div>
-                                <div className="btn-circle-secondary btn-testimonial right w-slider-arrow-right"><div className="line-rounded-icon">�&nbsp;�</div></div>
+                                <div className="btn-circle-secondary btn-testimonial left w-slider-arrow-left"><div className="line-rounded-icon"><ImArrowLeft2/></div></div>
+                                <div className="btn-circle-secondary btn-testimonial right w-slider-arrow-right"><div className="line-rounded-icon"><ImArrowRight2/></div></div>
                                 <div className="hidden-on-desktop w-slider-nav w-round"></div>
                             </div>
                         </div>

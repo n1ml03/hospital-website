@@ -1,9 +1,83 @@
-import { Book } from "../components"    
-import { Footer } from "../components"
+import { ImArrowLeft2, ImArrowRight2, ImFacebook } from "react-icons/im";
+import { ImTwitter } from "react-icons/im";
+import { RiInstagramFill } from "react-icons/ri";
+import { ImLinkedin2 } from "react-icons/im";
+import { IoCall } from "react-icons/io5";
 
 export const Contact = () => {
     return (
         <>
+            <div className="section hero contact-v2">
+                    <div className="container-default w-container">
+                        <div className="z-index-1">
+                            <div
+                                data-w-id="9c5e6753-2cea-64d9-c415-3950230707ce"
+                                className="inner-container _518px center"
+                            >
+                                <div className="text-center mg-bottom-48px">
+                                    <div className="subtitle">Contact us</div>
+                                    <h1 className="display-1 color-neutral-100">Get in touch</h1>
+                                    <p className="color-neutral-300">Lorem ipsum dolor sit amet consectetur commodo aliquam augue duis aliquet ipsum donec tempus ac inter.</p>
+                                </div>
+                            </div>
+                            <div className="w-layout-grid grid-3-columns _1-col-tablet">
+                                <a
+                                    data-w-id="8e62ba8b-f739-02dc-3291-74ddc375244d"
+                                    href="tel:(253)456-1189"
+                                    className="card card-link-icon-top v2 w-inline-block"
+                                >
+                                    <div className="mg-bottom-24px">
+                                        <div className="card-picture-wrapper avatar-circle _04">
+                                            <img src="src/assets/icons/contact-phone-icon.svg" loading="lazy" alt="Contact Phone Icon" className="card-image" />
+                                        </div>
+                                    </div>
+                                    <h2 className="card-title-dark display-4 mg-bottom-8px">Give us a call</h2>
+                                    <p className="mg-bottom-24px color-neutral-600">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
+                                    <div className="card-link color-neutral-600 mg-top-auto">
+                                        <div className="link-text">(253) 456 - 1189</div>
+                                        <div className="line-rounded-icon card-arrow-right"><ImArrowRight2 /></div>
+                                    </div>
+                                </a>
+                                <a
+                                    data-w-id="8e62ba8b-f739-02dc-3291-74ddc3752459"
+                                    href="mailto:contact@doctr.com"
+                                    className="card card-link-icon-top v2 w-inline-block"
+                                >
+                                    <div className="mg-bottom-24px">
+                                        <div className="card-picture-wrapper avatar-circle _04">
+                                            <img src="src/assets/icons/contact-email-icon.svg" loading="lazy" alt="Contact Email Icon" className="card-image" />
+                                        </div>
+                                    </div>
+                                    <h2 className="card-title-dark display-4 mg-bottom-8px">Send us an email</h2>
+                                    <p className="mg-bottom-24px color-neutral-600">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
+                                    <div className="card-link color-neutral-600 mg-top-auto">
+                                        <div className="link-text">contact@doctr.com</div>
+                                        <div className="line-rounded-icon card-arrow-right"><ImArrowRight2 /></div>
+                                    </div>
+                                </a>
+                                <a
+                                    data-w-id="8e62ba8b-f739-02dc-3291-74ddc3752465"
+                                    href="https://www.intercom.com/"
+                                    target="_blank"
+                                    className="card card-link-icon-top v2 w-inline-block"
+                                >
+                                    <div className="mg-bottom-24px">
+                                        <div className="card-picture-wrapper avatar-circle _04">
+                                            <img src="src/assets/icons/contact-live-chat-icon.svg" loading="lazy" alt="Contact Live Chat Icon" className="card-image" />
+                                        </div>
+                                    </div>
+                                    <h2 className="card-title-dark display-4 mg-bottom-8px">Live chat with us</h2>
+                                    <p className="mg-bottom-24px color-neutral-600">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
+                                    <div className="card-link color-neutral-600 mg-top-auto">
+                                        <div className="link-text">Chat now</div>
+                                        <div className="line-rounded-icon card-arrow-right"><ImArrowRight2 /></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="half-bg-top contact-v2-bg-top"></div>
             <div className="section overflow-hidden">
                 <div className="container-default w-container">
                     <div className="z-index-1">
@@ -20,10 +94,10 @@ export const Contact = () => {
                                     <h3 className="text-400 bold mg-bottom-12px">Follow us on social media</h3>
                                     <p className="mg-bottom-32px mg-bottom-20px-tablet">Lorem ipsum dolor sit amet consectetur sed donec mattis tristique est egestas eget diam.</p>
                                     <div className="social-media-flex-container gap-column-16px">
-                                        <a href="https://facebook.com/" target="_blank" className="social-icon-single w-inline-block"><div className="social-icon-font font-size-20px-mbl">�&nbsp;�</div></a>
-                                        <a href="https://twitter.com/" target="_blank" className="social-icon-single w-inline-block"><div className="social-icon-font font-size-20px-mbl">�&nbsp;�</div></a>
-                                        <a href="https://www.instagram.com/" target="_blank" className="social-icon-single w-inline-block"><div className="social-icon-font font-size-20px-mbl">�&nbsp;�</div></a>
-                                        <a href="https://www.linkedin.com/" target="_blank" className="social-icon-single w-inline-block"><div className="social-icon-font font-size-20px-mbl">�&nbsp;�</div></a>
+                                        <a href="https://facebook.com/" target="_blank" className="social-icon-single w-inline-block"><div className="social-icon-font font-size-20px-mbl"><ImFacebook/></div></a>
+                                        <a href="https://twitter.com/" target="_blank" className="social-icon-single w-inline-block"><div className="social-icon-font font-size-20px-mbl"><ImTwitter/></div></a>
+                                        <a href="https://www.instagram.com/" target="_blank" className="social-icon-single w-inline-block"><div className="social-icon-font font-size-20px-mbl"><RiInstagramFill/></div></a>
+                                        <a href="https://www.linkedin.com/" target="_blank" className="social-icon-single w-inline-block"><div className="social-icon-font font-size-20px-mbl"><ImLinkedin2/></div></a>
                                     </div>
                                 </div>
                             </div>
@@ -45,28 +119,28 @@ export const Contact = () => {
                                                 <label htmlFor="name">Full name</label>
                                                 <div className="position-relative">
                                                     <input type="text" className="input w-input"  name="Name" data-name="Name" placeholder="John Carter" id="name" />
-                                                    <div className="floating-item icon"><img alt="User Icon Blue - Doctr X Webflow Template" src="images/6452c6f57004375cdbcd04fc_user-icon-blue.svg" /></div>
+                                                    <div className="floating-item icon"><img alt="User Icon Blue" src="src/assets/icons/user-icon-blue.svg" /></div>
                                                 </div>
                                             </div>
                                             <div>
                                                 <label htmlFor="email">Email address</label>
                                                 <div className="position-relative">
                                                     <input type="email" className="input w-input"  name="Email" data-name="Email" placeholder="example@youremail.com" id="email" />
-                                                    <div className="floating-item icon"><img alt="Email Icon Font - Doctr X Webflow Template" src="images/64504db60e0dbeed580ac2a0_email-icon-font.svg" /></div>
+                                                    <div className="floating-item icon"><img alt="Email Icon Font" src="src/assets/icons/email-icon-font.svg" /></div>
                                                 </div>
                                             </div>
                                             <div>   
                                                 <label htmlFor="Phone">Phone number</label>
                                                 <div className="position-relative">
                                                     <input type="tel" className="input w-input"  name="Phone" data-name="Phone" placeholder="(123) 456 - 7890" id="Phone" />
-                                                    <div className="floating-item icon"><img alt="Phone Icon Font V2 - Doctr X Webflow Template" src="images/64504db916d762dfc7e36481_phone-icon-font-v2.svg" /></div>
+                                                    <div className="floating-item icon"><img alt="Phone Icon Font V2" src="src/assets/icons/phone-icon-font-v2.svg" /></div>
                                                 </div>
                                             </div>
                                             <div>
                                                 <label htmlFor="schedule">Schedule to receive call</label>
                                                 <div className="position-relative">
                                                     <input type="text" className="input w-input"  name="Schedule" data-name="Schedule" placeholder="10:00 am to 1:00 pm" id="schedule" />
-                                                    <div className="floating-item icon"><img alt="Calendar Icon Font - Doctr X Webflow Template" src="images/64504db5083b275052a4ad23_calendar-icon-font.svg" /></div>
+                                                    <div className="floating-item icon"><img alt="Calendar Icon Font" src="src/assets/icons/calendar-icon-font.svg" /></div>
                                                 </div>
                                             </div>
                                             <div id="w-node-_808290d0-8825-562f-3fd7-2f0c00215e78-f7a60cc0">
@@ -223,12 +297,12 @@ export const Contact = () => {
                                         <div role="listitem" className="card hospital-location-card w-dyn-item">
                                             <div className="card-picture-wrapper hospital-card-picture">
                                                 <img
-                                                    src="images/san-francisco-thumbnail-image-location.jpg"
+                                                    src="src/assets/images/san-francisco-thumbnail-image-location.jpg"
                                                     alt="San Francisco, CA"
                                                     sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1439px) 38vw, 440px"
                                                     srcSet="
-                                                        images/san-francisco-thumbnail-image-location-p-500.jpg 500w,
-                                                        images/san-francisco-thumbnail-image-location.jpg       960w
+                                                        src/assets/images/san-francisco-thumbnail-image-location-p-500.jpg 500w,
+                                                        src/assets/images/san-francisco-thumbnail-image-location.jpg       960w
                                                     "
                                                     className="card-image"
                                                 />
@@ -243,7 +317,7 @@ export const Contact = () => {
                                                                 <img
                                                                     alt="Contact Phone Icon"
                                                                     loading="lazy"
-                                                                    src="images/contact-phone-icon.svg"
+                                                                    src="src/assets/icons/contact-phone-icon.svg"
                                                                     className="circle-icon _64px-mbl bg-light"
                                                                 />
                                                             </div>
@@ -266,7 +340,7 @@ export const Contact = () => {
                                                         <img
                                                             alt="Contact Visit Us Icon"
                                                             loading="lazy"
-                                                            src="images/contact-visit-us-icon.svg"
+                                                            src="src/assets/icons/contact-visit-us-icon.svg"
                                                             className="circle-icon _64px-mbl bg-light"
                                                         />
                                                         <div id="w-node-_9a42a4af-8b46-6115-3377-f2600f9dffdb-f7a60cc0">
@@ -291,12 +365,12 @@ export const Contact = () => {
                                         <div role="listitem" className="card hospital-location-card w-dyn-item">
                                             <div className="card-picture-wrapper hospital-card-picture">
                                                 <img
-                                                    src="images/mountain-view-thumbnail-image-location.jpg"
+                                                    src="src/assets/images/mountain-view-thumbnail-image-location.jpg"
                                                     alt="Mountain View, CA"
                                                     sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1439px) 38vw, 440px"
                                                     srcSet="
-                                                        images/mountain-view-thumbnail-image-location-p-500.jpg 500w,
-                                                        images/mountain-view-thumbnail-image-location.jpg       960w
+                                                        src/assets/images/mountain-view-thumbnail-image-location-p-500.jpg 500w,
+                                                        src/assets/images/mountain-view-thumbnail-image-location.jpg       960w
                                                     "
                                                     className="card-image"
                                                 />
@@ -311,7 +385,7 @@ export const Contact = () => {
                                                                 <img
                                                                     alt="Contact Phone Icon"
                                                                     loading="lazy"
-                                                                    src="images/contact-phone-icon.svg"
+                                                                    src="src/assets/icons/contact-phone-icon.svg"
                                                                     className="circle-icon _64px-mbl bg-light"
                                                                 />
                                                             </div>
@@ -334,7 +408,7 @@ export const Contact = () => {
                                                         <img
                                                             alt="Contact Visit Us Icon"
                                                             loading="lazy"
-                                                            src="images/contact-visit-us-icon.svg"
+                                                            src="src/assets/icons/contact-visit-us-icon.svg"
                                                             className="circle-icon _64px-mbl bg-light"
                                                         />
                                                         <div id="w-node-_7a04013e-7bc9-865e-1900-d26314067c49-f7a60cc0">
@@ -359,12 +433,12 @@ export const Contact = () => {
                                         <div role="listitem" className="card hospital-location-card w-dyn-item">
                                             <div className="card-picture-wrapper hospital-card-picture">
                                                 <img
-                                                    src="images/san-francisco-thumbnail-image-location.jpg"
+                                                    src="src/assets/images/san-francisco-thumbnail-image-location.jpg"
                                                     alt="San Francisco, CA"
                                                     sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1439px) 38vw, 440px"
                                                     srcSet="
-                                                        images/san-francisco-thumbnail-image-location-p-500.jpg 500w,
-                                                        images/san-francisco-thumbnail-image-location.jpg       960w
+                                                        src/assets/images/san-francisco-thumbnail-image-location-p-500.jpg 500w,
+                                                        src/assets/images/san-francisco-thumbnail-image-location.jpg       960w
                                                     "
                                                     className="card-image"
                                                 />
@@ -379,7 +453,7 @@ export const Contact = () => {
                                                                 <img
                                                                     alt="Contact Phone Icon"
                                                                     loading="lazy"
-                                                                    src="images/contact-phone-icon.svg"
+                                                                    src="src/assets/images/contact-phone-icon.svg"
                                                                     className="circle-icon _64px-mbl bg-light"
                                                                 />
                                                             </div>
@@ -402,7 +476,7 @@ export const Contact = () => {
                                                         <img
                                                             alt="Contact Visit Us Icon"
                                                             loading="lazy"
-                                                            src="images/contact-visit-us-icon.svg"
+                                                            src="src/assets/images/contact-visit-us-icon.svg"
                                                             className="circle-icon _64px-mbl bg-light"
                                                         />
                                                         <div id="w-node-bc2028a3-b163-1762-887e-11bdbcdd4605-f7a60cc0">
@@ -427,12 +501,12 @@ export const Contact = () => {
                                         <div role="listitem" className="card hospital-location-card w-dyn-item">
                                             <div className="card-picture-wrapper hospital-card-picture">
                                                 <img
-                                                    src="images/mountain-view-thumbnail-image-location.jpg"
+                                                    src="src/assets/images/mountain-view-thumbnail-image-location.jpg"
                                                     alt="Mountain View, CA"
                                                     sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1439px) 38vw, 440px"
                                                     srcSet="
-                                                        images/mountain-view-thumbnail-image-location-p-500.jpg 500w,
-                                                        images/mountain-view-thumbnail-image-location.jpg       960w
+                                                        src/assets/images/mountain-view-thumbnail-image-location-p-500.jpg 500w,
+                                                        src/assets/images/mountain-view-thumbnail-image-location.jpg       960w
                                                     "
                                                     className="card-image"
                                                 />
@@ -447,7 +521,7 @@ export const Contact = () => {
                                                                 <img
                                                                     alt="Contact Phone Icon"
                                                                     loading="lazy"
-                                                                    src="images/contact-phone-icon.svg"
+                                                                    src="src/assets/icons/contact-phone-icon.svg"
                                                                     className="circle-icon _64px-mbl bg-light"
                                                                 />
                                                             </div>
@@ -470,7 +544,7 @@ export const Contact = () => {
                                                         <img
                                                             alt="Contact Visit Us Icon"
                                                             loading="lazy"
-                                                            src="images/contact-visit-us-icon.svg"
+                                                            src="src/assets/icons/contact-visit-us-icon.svg"
                                                             className="circle-icon _64px-mbl bg-light"
                                                         />
                                                         <div id="w-node-_8e6bf82a-48d9-94d0-8120-632c03397eed-f7a60cc0">
@@ -495,12 +569,12 @@ export const Contact = () => {
                                         <div role="listitem" className="card hospital-location-card w-dyn-item">
                                             <div className="card-picture-wrapper hospital-card-picture">
                                                 <img
-                                                    src="images/san-francisco-thumbnail-image-location.jpg"
+                                                    src="src/assets/images/san-francisco-thumbnail-image-location.jpg"
                                                     alt="San Francisco, CA"
                                                     sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1439px) 38vw, 440px"
                                                     srcSet="
-                                                        images/san-francisco-thumbnail-image-location-p-500.jpg 500w,
-                                                        images/san-francisco-thumbnail-image-location.jpg       960w
+                                                        src/assets/images/san-francisco-thumbnail-image-location-p-500.jpg 500w,
+                                                        src/assets/images/san-francisco-thumbnail-image-location.jpg       960w
                                                     "
                                                     className="card-image"
                                                 />
@@ -515,7 +589,7 @@ export const Contact = () => {
                                                                 <img
                                                                     alt="Contact Phone Icon"
                                                                     loading="lazy"
-                                                                    src="images/contact-phone-icon.svg"
+                                                                    src="src/assets/icons/contact-phone-icon.svg"
                                                                     className="circle-icon _64px-mbl bg-light"
                                                                 />
                                                             </div>
@@ -538,7 +612,7 @@ export const Contact = () => {
                                                         <img
                                                             alt="Contact Visit Us Icon"
                                                             loading="lazy"
-                                                            src="images/contact-visit-us-icon.svg"
+                                                            src="src/assets/icons/contact-visit-us-icon.svg"
                                                             className="circle-icon _64px-mbl bg-light"
                                                         />
                                                         <div id="w-node-eba6e432-a892-4c65-7837-deca8f3e72b4-f7a60cc0">
@@ -563,12 +637,12 @@ export const Contact = () => {
                                         <div role="listitem" className="card hospital-location-card w-dyn-item">
                                             <div className="card-picture-wrapper hospital-card-picture">
                                                 <img
-                                                    src="images/mountain-view-thumbnail-image-location.jpg"
+                                                    src="src/assets/images/mountain-view-thumbnail-image-location.jpg"
                                                     alt="Mountain View, CA"
                                                     sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1439px) 38vw, 440px"
                                                     srcSet="
-                                                        images/mountain-view-thumbnail-image-location-p-500.jpg 500w,
-                                                        images/mountain-view-thumbnail-image-location.jpg       960w
+                                                        src/assets/images/mountain-view-thumbnail-image-location-p-500.jpg 500w,
+                                                        src/assets/images/mountain-view-thumbnail-image-location.jpg       960w
                                                     "
                                                     className="card-image"
                                                 />
@@ -583,7 +657,7 @@ export const Contact = () => {
                                                                 <img
                                                                     alt="Contact Phone Icon"
                                                                     loading="lazy"
-                                                                    src="images/contact-phone-icon.svg"
+                                                                    src="src/assets/icons/contact-phone-icon.svg"
                                                                     className="circle-icon _64px-mbl bg-light"
                                                                 />
                                                             </div>
@@ -606,7 +680,7 @@ export const Contact = () => {
                                                         <img
                                                             alt="Contact Visit Us Icon"
                                                             loading="lazy"
-                                                            src="images/contact-visit-us-icon.svg"
+                                                            src="src/assets/icons/contact-visit-us-icon.svg"
                                                             className="circle-icon _64px-mbl bg-light"
                                                         />
                                                         <div id="w-node-dbe8263a-191b-de2c-ae99-3171842f665a-f7a60cc0">
@@ -626,15 +700,15 @@ export const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="btn-circle-primary slider-arrow left---center-center w-slider-arrow-left"><div className="line-rounded-icon">�&nbsp;�</div></div>
-                        <div className="btn-circle-primary slider-arrow right---center-center w-slider-arrow-right"><div className="line-rounded-icon">�&nbsp;�</div></div>
+                        <div className="btn-circle-primary slider-arrow left---center-center w-slider-arrow-left"><div className="line-rounded-icon"><ImArrowLeft2/></div></div>
+                        <div className="btn-circle-primary slider-arrow right---center-center w-slider-arrow-right"><div className="line-rounded-icon"><ImArrowRight2/></div></div>
                         <div className="hidden-on-desktop w-slider-nav w-round"></div>
                     </div>
                     <div
                         data-w-id="def257cf-a696-9ab1-cdb8-9d2636d4c140"
                         className="buttons-row center"
                     >
-                        <a href="/booking" className="btn-primary w-button"><span className="doctr-custom-icon btn-icon-left"></span>Book an appointment</a>
+                        <a href="/booking" className="btn-primary w-button"><span className="doctr-custom-icon btn-icon-left"><IoCall/></span>Book an appointment</a>
                     </div>
                 </div>
             </div>

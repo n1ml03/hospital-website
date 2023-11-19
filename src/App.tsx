@@ -18,8 +18,8 @@ import "./main.css";
 import { Login } from "./pages/login";
 import { CredentialResponse } from "./interfaces/google";
 import { parseJwt } from "./utils/parse-jwt";
-import { Booking, Home, Specialities, Blogs, Contact } from './pages';
-import { Book, Footer } from './components';
+import { Booking, Home, Services, Blogs, Contact, About, Hospitals } from './pages';
+import { Book, Footer, Navbar } from './components';
 
 const axiosInstance = axios.create();
 axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
@@ -131,15 +131,19 @@ function App() {
                         
                     }}
                 >
+                    <Navbar/>
                     <Routes>
                         <Route path="/home" element={<Home />} />
-                        <Route path="/specialities" element={<Specialities />} />
+                        <Route path="/services" element={<Services />} />
                         <Route path="/booking" element={<Booking />} />
                         <Route path="/blogs" element={<Blogs />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/book" element={<Book />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/hospitals" element={<Hospitals />} />
                     </Routes>
-                    <Book/>
                     <Footer/>
+                    
                 <RefineKbar />
                 <UnsavedChangesNotifier />
                 <DocumentTitleHandler />

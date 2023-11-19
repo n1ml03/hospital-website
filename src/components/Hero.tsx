@@ -1,3 +1,6 @@
+import { GiHospitalCross } from "react-icons/gi";
+import { IoCall } from "react-icons/io5";
+
 export const Hero = () => {
     return (
         <>
@@ -27,8 +30,8 @@ export const Hero = () => {
                                 data-w-id="bfd1240a-1af3-cf37-bca2-22f22ab7a87d"
                                 className="buttons-row center"
                             >
-                                <a href="/booking" className="btn-primary button-row w-button"><span className="doctr-custom-icon btn-icon-left"></span>Book an appointment</a>
-                                <a href="/services" className="btn-secondary white w-button"><span className="doctr-custom-icon btn-icon-left"></span>Our specialities</a>
+                                <a href="/booking" className="btn-primary button-row w-button"><span className="doctr-custom-icon btn-icon-left"><IoCall/></span>Book an appointment</a>
+                                <a href="/services" className="btn-secondary white w-button"><span className="doctr-custom-icon btn-icon-left"><GiHospitalCross/></span>Our specialities</a>
                             </div>
                         </div>
                     </div>
@@ -36,15 +39,15 @@ export const Hero = () => {
             </div>
             <div className="hero-home-image---bg">
                     <img
-                        src="images/city-optimal-living.jpg"
+                        src="src/assets/images/city-optimal-living.jpg"
                         loading="eager"
                         sizes="100vw"
                         srcSet="
-                            images/city-optimal-living-p-500.jpg   500w,
-                            images/city-optimal-living-p-800.jpg   800w,
-                            images/city-optimal-living-p-1080.jpg 1080w,
-                            images/city-optimal-living-p-1600.jpg 1600w,
-                            images/city-optimal-living.jpg        2160w
+                            src/assets/images/city-optimal-living-p-500.jpg   500w,
+                            src/assets/images/city-optimal-living-p-800.jpg   800w,
+                            src/assets/images/city-optimal-living-p-1080.jpg 1080w,
+                            src/assets/images/city-optimal-living-p-1600.jpg 1600w,
+                            src/assets/images/city-optimal-living.jpg        2160w
                         "
                         alt="Holistic Wellness For Optimal Living - Doctr X Webflow Template"
                         className="_w-h-100 fit-cover"

@@ -1,3 +1,6 @@
+import { GiHospitalCross } from "react-icons/gi"
+import { IoCall } from "react-icons/io5"
+
 export const Book = () => {
     return (
         <>
@@ -19,19 +22,19 @@ export const Book = () => {
                                 data-w-id="5c1f0fdc-59d3-cf65-6308-53d7514c67c2"
                                 className="button-row-wrap center"
                             >
-                                <a href="/booking" className="btn-primary w-button"><span className="doctr-custom-icon btn-icon-left"></span>Book an appointment</a>
-                                <a href="/services" className="btn-secondary white w-button"><span className="doctr-custom-icon btn-icon-left"></span>Our specialities</a>
+                                <a href="/booking" className="btn-primary w-button"><span className="doctr-custom-icon btn-icon-left"><IoCall/></span>Book an appointment</a>
+                                <a href="/services" className="btn-secondary white w-button"><span className="doctr-custom-icon btn-icon-left"><GiHospitalCross/></span>Our specialities</a>
                             </div>
                         </div>
                         <div className="position-absolute full">
                             <img
-                                src="images/waiting-room-hospital.jpg"
+                                src="src/images/waiting-room-hospital.jpg"
                                 loading="eager"
                                 sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1439px) 96vw, 1292px"
                                 srcSet="
-                                    images/waiting-room-hospital-p-500.jpg  500w,
-                                    images/waiting-room-hospital-p-800.jpg  800w,
-                                    images/waiting-room-hospital.jpg       1290w
+                                    src/images/waiting-room-hospital-p-500.jpg  500w,
+                                    src/images/waiting-room-hospital-p-800.jpg  800w,
+                                    src/images/waiting-room-hospital.jpg       1290w
                                 "
                                 alt=""
                                 className="_w-h-100 fit-cover"

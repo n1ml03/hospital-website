@@ -14,7 +14,7 @@ export const Differentiation = () => {
                                     <div className="accordion-image-left-wrapper">
                                         <div className="mg-right-36px mg-right-16px---mbl">
                                             <div className="image-wrapper size-80px">
-                                                <img src="images/64515ff3b35ca5c30856e57d_resident-home-icon-doctr-x-webflow-template.svg" loading="lazy" alt="Resident Home Icon - Doctr X Webflow Template" className="circle-icon" />
+                                                <img src="src/assets/icons/resident-home-icon.svg" loading="lazy" alt="Resident Home Icon" className="circle-icon" />
                                             </div>
                                         </div>
                                         <div className="accordion-content-wrapper v2">
@@ -38,7 +38,7 @@ export const Differentiation = () => {
                                     <div className="accordion-image-left-wrapper">
                                         <div className="mg-right-36px mg-right-16px---mbl">
                                             <div className="image-wrapper size-80px">
-                                                <img src="images/645c72bee0e4bd7d405e9397_quality-icon-doctr-x-webflow-template.svg" loading="lazy" alt="Quality Icon - Doctr X Webflow Template" className="circle-icon" />
+                                                <img src="src/assets/icons/quality-icon.svg" loading="lazy" alt="Quality Icon" className="circle-icon" />
                                             </div>
                                         </div>
                                         <div className="accordion-content-wrapper v2">
@@ -62,7 +62,7 @@ export const Differentiation = () => {
                                     <div className="accordion-image-left-wrapper">
                                         <div className="mg-right-36px mg-right-16px---mbl">
                                             <div className="image-wrapper size-80px">
-                                                <img src="images/645c72ba9f90e13ac7440c73_nurse-staff-icon-doctr-x-webflow-template.svg" loading="lazy" alt="Nurse Staff Icon - Doctr X Webflow Template" className="circle-icon" />
+                                                <img src="src/assets/icons/nurse-staff-icon.svg" loading="lazy" alt="Nurse Staff Icon" className="circle-icon" />
                                             </div>
                                         </div>
                                         <div className="accordion-content-wrapper v2">
@@ -91,13 +91,13 @@ export const Differentiation = () => {
                         >
                             <div className="image-rounded-corners-wrapper _04">
                                 <img
-                                    src="images/care-your-loved-ones-image.jpg"
+                                    src="src/assets/images/care-your-loved-ones-image.jpeg"
                                     loading="eager"
                                     sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1439px) 43vw, 574.890625px"
                                     srcSet="
-                                        images/care-your-loved-ones-image-p-500.jpg  500w,
-                                        images/care-your-loved-ones-image-p-800.jpg  800w,
-                                        images/care-your-loved-ones-image.jpg       1264w
+                                        src/assets/images/care-your-loved-ones-image-p-500.jpeg  500w,
+                                        src/assets/images/care-your-loved-ones-image-p-800.jpeg  800w,
+                                        src/assets/images/care-your-loved-ones-image.jpeg       1264w
                                     "
                                     alt="The Right Care For Your Loved Ones"
                                     className="image"
@@ -105,7 +105,7 @@ export const Differentiation = () => {
                             </div>
                             <div data-w-id="a22cd6ab-5194-bda4-92a7-e6fcd60a8106" className="blue-square _05">
                                 <div className="blue-inner-square _01">
-                                    <img src="images/shape-bg-home-v3-choosing-us.svg" alt="Shape BG Home V3 Choosing Us" className="image-shape _02" />
+                                    <img src="src/assets/icons/shape-bg-home-v3-choosing-us.svg" alt="Shape BG Home Choosing Us" className="image-shape _02" />
                                 </div>
                             </div>
                         </div>

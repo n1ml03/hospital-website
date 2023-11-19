@@ -4,7 +4,7 @@ import { Differentiation } from "./Differentiation"
 import { Footer } from "./Footer"
 import { Hero } from "./Hero"
 import { Info } from "./Info"
-import { Specialities } from "./Speciality"
+import { Service } from "./Service"
 import { Testimonials } from "./Testimonials"
 import { Blog } from "./Blog"
 import { Book } from "./Book"
@@ -15,9 +15,9 @@ export {
     Info,
     Features,
     Differentiation,
-    Specialities,
     Testimonials,
     Blog,
     Book,
-    Footer
+    Footer, 
+    Service
 }
