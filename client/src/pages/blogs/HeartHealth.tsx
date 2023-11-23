@@ -3,16 +3,14 @@ import {GiHospitalCross} from "react-icons/gi"
 import {ImFacebook, ImLinkedin2, ImTwitter} from "react-icons/im"
 import {IoCall} from "react-icons/io5"
 import {RiInstagramFill} from "react-icons/ri"
+import {BookSmalver} from "../../components";
 
 export const HeartHealth = () => {
     return (
         <>
             <div className="section hero blog-post">
                 <div className="container-default w-container">
-                    <div
-                        data-w-id="66239862-f976-9aa5-4692-104b01ddc9f7"
-                        className="inner-container _720px center"
-                    >
+                    <div className="inner-container _720px center">
                         <div className="text-center">
                             <div className="mg-bottom-24px">
                                 <div className="flex-horizontal gap-column-16px">
@@ -26,7 +24,6 @@ export const HeartHealth = () => {
                     </div>
                     <div className="image-full-width-right blog-post">
                         <img
-                            data-w-id="66239862-f976-9aa5-4692-104b01ddc9ff"
                             loading="eager"
                             src="../src/assets/images/heart-health-featured-image.jpg"
                             alt="3 simple and easy steps to jump-start your heart health"
@@ -47,10 +44,7 @@ export const HeartHealth = () => {
                 <div className="container-default w-container">
                     <div className="w-layout-grid grid-2-columns blog-post-grid">
                         <div id="w-node-d23baf22-889a-2a0f-f867-3280bc780f0f-f7a60cc4" className="sticky-top _24px-top static-tablet">
-                            <div
-                                data-w-id="6f56e9ea-91c5-1e5e-a83a-7909600e24e2"
-                                className="inner-container _412px _100---tablet"
-                            >
+                            <div className="inner-container _412px _100---tablet">
                                 <div className="grid-1-column gap-row-48px">
                                     <div className="card newsletter-card-container blog-post">
                                         <div className="z-index-1">
@@ -90,7 +84,6 @@ export const HeartHealth = () => {
                                             <div role="list" className="grid-1-column blog-grid-1-col popular-posts w-dyn-items">
                                                 <div role="listitem" className="w-dyn-item">
                                                     <a
-                                                        data-w-id="290d9609-6288-8a8b-8dc1-20117e69f391"
                                                         href="/blog/3-simple-and-easy-steps-to-jump-start-your-heart-health"
                                                         aria-current="page"
                                                         className="card popular-posts-card w-inline-block w--current"
@@ -115,7 +108,7 @@ export const HeartHealth = () => {
                                                     </a>
                                                 </div>
                                                 <div role="listitem" className="w-dyn-item">
-                                                    <a data-w-id="290d9609-6288-8a8b-8dc1-20117e69f391" href="/blog/the-role-of-vaccines-in-protecting-against-allergies" className="card popular-posts-card w-inline-block">
+                                                    <a href="/blog/the-role-of-vaccines-in-protecting-against-allergies" className="card popular-posts-card w-inline-block">
                                                         <div id="w-node-_290d9609-6288-8a8b-8dc1-20117e69f392-f7a60cc4" className="card-picture-wrapper popular-posts-picture">
                                                             <img
                                                                 src="../src/assets/images/vaccines-protecting-thumbnail-v2-image.jpg"
@@ -136,7 +129,7 @@ export const HeartHealth = () => {
                                                     </a>
                                                 </div>
                                                 <div role="listitem" className="w-dyn-item">
-                                                    <a data-w-id="290d9609-6288-8a8b-8dc1-20117e69f391" href="/blog/5-steps-to-prepare-for-a-pediatrician-appointment" className="card popular-posts-card w-inline-block">
+                                                    <a href="/blog/5-steps-to-prepare-for-a-pediatrician-appointment" className="card popular-posts-card w-inline-block">
                                                         <div id="w-node-_290d9609-6288-8a8b-8dc1-20117e69f392-f7a60cc4" className="card-picture-wrapper popular-posts-picture">
                                                             <img
                                                                 src="../src/assets/images/pediatrician-appointment-thumbnail-v2-image.jpg"
@@ -164,7 +157,6 @@ export const HeartHealth = () => {
                         </div>
                         <div
                             id="w-node-d364559a-e203-26f7-e49c-904189ad4522-f7a60cc4"
-                            data-w-id="d364559a-e203-26f7-e49c-904189ad4522"
                             className="inner-container _772px _100---tablet"
                         >
                             <div className="mg-bottom-40px">
@@ -188,7 +180,7 @@ export const HeartHealth = () => {
                                     </p>
                                     <p>
                                         Vitae congue eu consequat ac felis placerat <strong>vestibulum lectus</strong> mauris ultrices cursus sit amet dictum sit amet justo donec enim diam
-                                        <a href="/home-pages/home-v1">porttitor lacus luctus accumsan</a> tortor posuere praesent tristique magna sit amet purus gravida quis blandit turpis.
+                                        <a href="/home">porttitor lacus luctus accumsan</a> tortor posuere praesent tristique magna sit amet purus gravida quis blandit turpis.
                                     </p>
                                     <figure className="w-richtext-align-fullwidth w-richtext-figure-type-image">
                                         <div><img src="../src/assets/images/check-prediatrician.jpg" loading="lazy" alt="Check Pediatrician" /></div>
@@ -284,7 +276,7 @@ export const HeartHealth = () => {
                                 </div>
                             </div>
                             <div className="card blog-post-author-card">
-                                <a data-w-id="81b06f72-b9cb-3732-7920-3b70662b5c74" href="/doctors/dr-john-carter" className="link-card-picture-left w-inline-block">
+                                <a href="/doctors/dr-john-carter" className="link-card-picture-left w-inline-block">
                                     <img
                                         loading="eager"
                                         alt="3 simple and easy steps to jump-start your heart health"
@@ -319,23 +311,17 @@ export const HeartHealth = () => {
             <div className="section pd-top-and-bottom-150px">
                 <div className="container-default w-container">
                     <div className="mg-bottom-40px">
-                        <div
-                            data-w-id="49d787ee-0c84-1d03-a20d-4856ae0aef11"
-                            className="w-layout-grid grid-2-columns title-and-buttons"
-                        >
+                        <div className="w-layout-grid grid-2-columns title-and-buttons">
                             <h2 id="w-node-_49d787ee-0c84-1d03-a20d-4856ae0aef12-f7a60cc4" className="display-2 mg-bottom-0">Related articles</h2>
                             <div id="w-node-fc250488-c36c-0c03-327e-f99075cd463b-f7a60cc4">
                                 <a href="/blogs" className="btn-secondary w-button"><span className="doctr-custom-icon btn-icon-left"><FaMagnifyingGlass/></span>Browse all articles</a>
                             </div>
                         </div>
                     </div>
-                    <div
-                        data-w-id="945f727b-2fef-a4ac-7cd8-38c21de7710e"
-                        className="w-dyn-list"
-                    >
+                    <div className="w-dyn-list">
                         <div role="list" className="grid-3-columns blog-grid-3-cols v1 w-dyn-items">
                             <div role="listitem" className="flex w-dyn-item">
-                                <a data-w-id="945f727b-2fef-a4ac-7cd8-38c21de77111" href="/blog/the-role-of-vaccines-in-protecting-against-allergies" className="card w-inline-block">
+                                <a href="/blog/the-role-of-vaccines-in-protecting-against-allergies" className="card w-inline-block">
                                     <div className="card-picture-wrapper">
                                         <img
                                             src="../src/assets/images/vaccines-protecting-thumbnail-image.jpg"
@@ -361,7 +347,7 @@ export const HeartHealth = () => {
                                 </a>
                             </div>
                             <div role="listitem" className="flex w-dyn-item">
-                                <a data-w-id="945f727b-2fef-a4ac-7cd8-38c21de77111" href="/blog/5-steps-to-prepare-for-a-pediatrician-appointment" className="card w-inline-block">
+                                <a href="/blog/5-steps-to-prepare-for-a-pediatrician-appointment" className="card w-inline-block">
                                     <div className="card-picture-wrapper">
                                         <img
                                             src="../src/assets/images/pediatrician-appointment-thumbnail-image.jpg"
@@ -387,7 +373,7 @@ export const HeartHealth = () => {
                                 </a>
                             </div>
                             <div role="listitem" className="flex w-dyn-item">
-                                <a data-w-id="945f727b-2fef-a4ac-7cd8-38c21de77111" href="/blog/vegetarian-diet-benefits-risks-and-tips" className="card w-inline-block">
+                                <a href="/blog/vegetarian-diet-benefits-risks-and-tips" className="card w-inline-block">
                                     <div className="card-picture-wrapper">
                                         <img
                                             src="../src/assets/images/vegetarian-diet-thumbnail-image.jpg"
@@ -416,24 +402,7 @@ export const HeartHealth = () => {
                     </div>
                 </div>
             </div>
-            <div className="position-relative">
-                <div className="container-default z-index-1 w-container">
-                    <div className="cta v1">
-                        <div data-w-id="6c706716-b18b-383b-6921-a866b8dcc9f8" className="half-bg-left call-to-action-v1"></div>
-                        <div data-w-id="6c706716-b18b-383b-6921-a866b8dcc9f9" className="z-index-1">
-                            <div className="inner-container _548px center">
-                                <div className="subtitle white">book now</div>
-                                <h2 className="display-2 color-neutral-100 mg-bottom-24px">Book your medical appointment today</h2>
-                            </div>
-                            <div className="button-row-wrap center">
-                                <a href="/booking" className="btn-primary black w-button"><span className="doctr-custom-icon btn-icon-left"><IoCall/></span>Book an appointment</a>
-                                <a href="/services" className="btn-secondary white w-button"><span className="doctr-custom-icon btn-icon-left"><GiHospitalCross/></span>Our specialities</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="half-bg-bottom half-footer-bg"></div>
+            <BookSmalver/>
         </>
     )
 }

@@ -1,5 +1,5 @@
 import {Blog} from "./Blog";
-import {Book} from "./Book";
+import {BookBigver} from "./BookBigver";
 import {Differentiation} from "./Differentiation";
 import {Features} from "./Features";
 import {Footer} from "./Footer";
@@ -8,7 +8,7 @@ import {Info} from "./Info";
 import {Navbar} from "./Navbar";
 import {Service} from "./Service";
 import {Testimonial} from "./Testimonial";
-
+import {BookSmalver} from "./BookSmalver";
 
 export {
     Navbar,
@@ -18,7 +18,8 @@ export {
     Differentiation,
     Testimonial,
     Blog,
-    Book,
+    BookBigver,
     Footer, 
-    Service
+    Service,
+    BookSmalver
 }

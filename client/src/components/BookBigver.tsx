@@ -1,7 +1,7 @@
 import {GiHospitalCross} from "react-icons/gi"
 import {IoCall} from "react-icons/io5"
 
-export const Book = () => {
+export const BookBigver = () => {
     return (
         <>
             <div className="position-relative">

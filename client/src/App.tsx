@@ -30,7 +30,7 @@ import {
     Pulmonology,
     Services
 } from './pages';
-import {Book, Footer} from './components';
+import {BookBigver, Footer} from './components';
 import {Cardiology} from './pages/services/Cardiology';
 import {Nutrition} from './pages/services/Nutrition';
 import {Testimonials} from "./pages/Testimonials";
@@ -152,7 +152,7 @@ function App() {
                         <Route path="/booking" element={<Booking />} />
                         <Route path="/blogs" element={<Blogs />} />
                         <Route path="/contact" element={<Contact />} />
-                        <Route path="/book" element={<Book />} />
+                        <Route path="/book" element={<BookBigver />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/testimonials" element={<Testimonials />} />
                         <Route path="/hospitals" element={<Hospitals />} />
